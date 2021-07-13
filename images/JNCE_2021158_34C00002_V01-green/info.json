@@ -1,0 +1,32 @@
+{
+  "tiles" : [ {
+    "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+    "width" : 1024,
+    "height" : 1024
+  } ],
+  "protocol" : "http://iiif.io/api/image",
+  "sizes" : [ {
+    "width" : 50,
+    "height" : 50
+  }, {
+    "width" : 100,
+    "height" : 100
+  }, {
+    "width" : 200,
+    "height" : 200
+  }, {
+    "width" : 400,
+    "height" : 400
+  }, {
+    "width" : 800,
+    "height" : 800
+  }, {
+    "width" : 1600,
+    "height" : 1600
+  } ],
+  "profile" : "http://iiif.io/api/image/2/level0.json",
+  "width" : 1600,
+  "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-green",
+  "@context" : "http://iiif.io/api/image/2/context.json",
+  "height" : 1600
+}
