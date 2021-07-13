@@ -1,9 +1,0 @@
-{
-  "id" : "https://iiif-test.github.io/Space/images/manifest.json",
-  "label" : {
-    "en" : [ "All images loaded in iiif-test/Space project" ]
-  },
-  "type" : "Manifest",
-  "@context" : "http://iiif.io/api/presentation/3/context.json",
-  "items" : [ ]
-}
