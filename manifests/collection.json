@@ -9,5 +9,9 @@
     "@type" : "sc:Manifest",
     "@id" : "https://iiif-test.github.io/Space/manifests/ganymede-2021-06-07.json",
     "label" : "Ganymede Image"
+  }, {
+    "@type" : "sc:Manifest",
+    "@id" : "https://iiif-test.github.io/Space/manifests/ganymede-layers-2021-06-07.json",
+    "label" : "Ganymede Image - Layers"
   } ]
 }
