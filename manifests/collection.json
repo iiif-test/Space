@@ -1,0 +1,13 @@
+{
+  "id" : "https://iiif-test.github.io/Space/manifests/collection.json",
+  "label" : {
+    "en" : [ "All manifests loaded in iiif-test/Space project" ]
+  },
+  "type" : "Collection",
+  "@context" : "http://iiif.io/api/presentation/3/context.json",
+  "items" : [ {
+    "@type" : "sc:Manifest",
+    "@id" : "https://iiif-test.github.io/Space/manifests/ganymede-2021-06-07.json",
+    "label" : "Ganymede Image"
+  } ]
+}
