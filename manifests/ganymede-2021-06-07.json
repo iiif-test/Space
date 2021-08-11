@@ -1,101 +1,124 @@
 {
-  "@context" : "http://iiif.io/api/presentation/2/context.json",
-  "@id" : "https://iiif-test.github.io/Space/manifests/ganymede-2021-06-07.json",
-  "@type" : "sc:Manifest",
-  "label" : "Ganymede Image",
-  "metadata" : [ ],
-  "description" : [ {
-    "@value" : "Image of Ganymede one of Jupiter's moons taken by the Juno spacecraft on the 7th of June 2021.",
-    "@language" : "en"
-  } ],
-  "license" : "https://creativecommons.org/licenses/by/3.0/",
-  "attribution" : "[Click to edit attribution]",
-  "sequences" : [ {
-    "@id" : "http://46165163-737d-45d9-b96e-052d73e9883a",
-    "@type" : "sc:Sequence",
-    "label" : [ {
-      "@value" : "Normal Sequence",
-      "@language" : "en"
-    } ],
-    "canvases" : [ {
-      "@id" : "http://0d741906-43e7-4ec9-ab4d-7de1920dc631",
-      "@type" : "sc:Canvas",
-      "label" : "Blue",
-      "height" : 1600,
-      "width" : 1600,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://70fb6a83-aeb0-432a-a5f9-e21abc5d04b6",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-blue/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-blue",
-            "profile" : "http://iiif.io/api/image/2/level0.json"
-          },
-          "height" : 1600,
-          "width" : 1600
-        },
-        "on" : "http://0d741906-43e7-4ec9-ab4d-7de1920dc631"
-      } ],
-      "related" : ""
-    }, {
-      "@id" : "http://8cd666ee-2fb0-4ba1-a630-f42afbe7fa68",
-      "@type" : "sc:Canvas",
-      "label" : "Green",
-      "height" : 1600,
-      "width" : 1600,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://4a9e2ab7-fb73-4f21-83c2-930650be8bdb",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-green/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-green",
-            "profile" : "http://iiif.io/api/image/2/level0.json"
-          },
-          "height" : 1600,
-          "width" : 1600
-        },
-        "on" : "http://8cd666ee-2fb0-4ba1-a630-f42afbe7fa68"
-      } ],
-      "related" : ""
-    }, {
-      "@id" : "http://aab5396b-94f6-4fc9-a76e-3e5be65b1a66",
-      "@type" : "sc:Canvas",
-      "label" : "Red",
-      "height" : 1600,
-      "width" : 1600,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://fe7d16dd-aee1-4c12-b765-5dd4feea2537",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-red/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-red",
-            "profile" : "http://iiif.io/api/image/2/level0.json"
-          },
-          "height" : 1600,
-          "width" : 1600
-        },
-        "on" : "http://aab5396b-94f6-4fc9-a76e-3e5be65b1a66"
-      } ],
-      "related" : ""
-    } ]
-  } ],
-  "structures" : [ ]
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://iiif-test.github.io/Space/manifests/ganymede-2021-06-07.json",
+    "@type": "sc:Manifest",
+    "label": "Ganymede Image",
+    "metadata": [],
+    "description": [
+        {
+            "@value": "Image of Ganymede one of Jupiter's moons taken by the Juno spacecraft on the 7th of June 2021.",
+            "@language": "en"
+        }
+    ],
+    "license": "https://creativecommons.org/licenses/by/3.0/",
+    "attribution": "[Click to edit attribution]",
+    "sequences": [
+        {
+            "@id": "http://46165163-737d-45d9-b96e-052d73e9883a",
+            "@type": "sc:Sequence",
+            "label": [
+                {
+                    "@value": "Normal Sequence",
+                    "@language": "en"
+                }
+            ],
+            "canvases": [
+                {
+                    "@id": "http://0d741906-43e7-4ec9-ab4d-7de1920dc631",
+                    "@type": "sc:Canvas",
+                    "label": "Blue",
+                    "height": 1600,
+                    "width": 1600,
+                    "images": [
+                        {
+                            "@context": "http://iiif.io/api/presentation/2/context.json",
+                            "@id": "http://70fb6a83-aeb0-432a-a5f9-e21abc5d04b6",
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-blue/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-blue",
+                                    "profile": "http://iiif.io/api/image/2/level0.json"
+                                },
+                                "height": 1600,
+                                "width": 1600
+                            },
+                            "on": "http://0d741906-43e7-4ec9-ab4d-7de1920dc631"
+                        }
+                    ],
+                    "related": "",
+                    "otherContent": [
+                        {
+                            "@id": "https://iiif-test.github.io/Space/annotations/annotations.json",
+                            "@type": "sc:AnnotationList",
+                            "label": "My fantastic annotations"
+                        }
+                    ]
+                },
+                {
+                    "@id": "http://8cd666ee-2fb0-4ba1-a630-f42afbe7fa68",
+                    "@type": "sc:Canvas",
+                    "label": "Green",
+                    "height": 1600,
+                    "width": 1600,
+                    "images": [
+                        {
+                            "@context": "http://iiif.io/api/presentation/2/context.json",
+                            "@id": "http://4a9e2ab7-fb73-4f21-83c2-930650be8bdb",
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-green/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-green",
+                                    "profile": "http://iiif.io/api/image/2/level0.json"
+                                },
+                                "height": 1600,
+                                "width": 1600
+                            },
+                            "on": "http://8cd666ee-2fb0-4ba1-a630-f42afbe7fa68"
+                        }
+                    ],
+                    "related": ""
+                },
+                {
+                    "@id": "http://aab5396b-94f6-4fc9-a76e-3e5be65b1a66",
+                    "@type": "sc:Canvas",
+                    "label": "Red",
+                    "height": 1600,
+                    "width": 1600,
+                    "images": [
+                        {
+                            "@context": "http://iiif.io/api/presentation/2/context.json",
+                            "@id": "http://fe7d16dd-aee1-4c12-b765-5dd4feea2537",
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "resource": {
+                                "@id": "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-red/full/full/0/default.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-red",
+                                    "profile": "http://iiif.io/api/image/2/level0.json"
+                                },
+                                "height": 1600,
+                                "width": 1600
+                            },
+                            "on": "http://aab5396b-94f6-4fc9-a76e-3e5be65b1a66"
+                        }
+                    ],
+                    "related": ""
+                }
+            ]
+        }
+    ],
+    "structures": []
 }
