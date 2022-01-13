@@ -1,4 +1,22 @@
-## My IIIF Workbench
+## {{site.title}}
+
+{{ site.description }}
+
+### Files:
+{% assign files = site.static_files  %}
+
+{% for file in files %}
+ * {{ file.path }}
+{% endfor %}
+
+### Documents:
+{% assign files = site.documents  %}
+
+{% for file in files %}
+ * {{ file.path }}
+{% endfor %}
+
+
 
 You can use the [editor on GitHub](https://github.com/glenrobson/iiif-training-workbench/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
