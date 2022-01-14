@@ -12,8 +12,8 @@
 {% assign files = site.static_files | where_exp: "image", "image.path contains '/images/'" |where_exp: "image", "image.path contains '/info.json'"   %}
 <div id="gallery">
     {% for img_file in files %}
-        <a href="{{ site.url }}plugins/osd/?iiif-content={{ site.url | append: img_file.path | absolute_url}}">
-            <img src="{{ site.url | append: img_file.path | replace: "info.json", "full/400,/0/default.jpg" }} " />
+        <a href="plugins/osd/?iiif-content={{ img_file.path | absolute_url}}">
+            <img src="{{ img_file.path | replace: "info.json", "full/400,/0/default.jpg" | absolute_url}} " />
         </a>
     {% endfor %}
 </div>
@@ -38,7 +38,7 @@
 
 {% for file in annotations %}
  * [{{ file.path | replace: "/annotations/", ""}}]({{ file.path | absolute_url }})
-    * [View in Annona]({{site.url }}/plugins/annona/?iiif-content={{ file.path | absolute_url }})
+    * [View in Annona](plugins/annona/?iiif-content={{ file.path | absolute_url }})
 {% endfor %}
 
 
