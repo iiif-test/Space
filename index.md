@@ -1,6 +1,7 @@
 {{ site.description }}
 
 ### IIIF Images:
+<script src="{{ '/plugins/js/image.js' | absolute_url }}" ></script>
 
 <script
 			  src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -9,17 +10,20 @@
 <link rel="stylesheet" href="plugins/justified/justifiedGallery.min.css" />
 <script src="plugins/justified/jquery.justifiedGallery.min.js"></script>
 
+<script>
 {% assign files = site.static_files | where_exp: "image", "image.path contains '/images/'" |where_exp: "image", "image.path contains '/info.json'"   %}
+{% for img_file in files %}
+    addToGallery('gallery', '{{img_file.path | absolute_url}}', 300,300);
+{% endfor %}
+</script>
 <div id="gallery">
-    {% for img_file in files %}
-        <a href="plugins/osd/?iiif-content={{ img_file.path | absolute_url}}">
-            <img src="{{ img_file.path | replace: "info.json", "full/400,/0/default.jpg" | absolute_url}} " />
-        </a>
-    {% endfor %}
+        
 </div>
 
 <script>
-    $("#gallery").justifiedGallery();
+    $("#gallery").justifiedGallery({
+        rowHeight: 300
+    });
 </script>
 
 
@@ -40,5 +44,3 @@
  * [{{ file.path | replace: "/annotations/", ""}}]({{ file.path | absolute_url }})
     * [View in Annona](plugins/annona/?iiif-content={{ file.path | absolute_url }})
 {% endfor %}
-
-
