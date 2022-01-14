@@ -1,55 +1,44 @@
-## {{site.title}}
-
 {{ site.description }}
 
-### Files:
-{% assign files = site.static_files  %}
+### IIIF Images:
 
-{% for file in files %}
- * {{ file.path }}
+<script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="plugins/justified/justifiedGallery.min.css" />
+<script src="plugins/justified/jquery.justifiedGallery.min.js"></script>
+
+{% assign files = site.static_files | where_exp: "image", "image.path contains '/images/'" |where_exp: "image", "image.path contains '/info.json'"   %}
+<div id="gallery">
+    {% for img_file in files %}
+        <a href="plugins/osd/?iiif-content={{img_file.path | absolute_url}}">
+            <img src="{{ img_file.path | replace: "info.json", "full/400,/0/default.jpg" }} " />
+        </a>
+    {% endfor %}
+</div>
+
+<script>
+    $("#gallery").justifiedGallery();
+</script>
+
+
+### Manifests:
+{% assign manifests = site.static_files | where_exp: "manifest", "manifest.path contains '/manifests/'"  |where_exp: "manifest", "manifest.extname == '.json'" | where_exp: "manifest", "manifest.path != '/manifests/collection.json' " %}
+
+{% for file in manifests %}
+ * [{{ file.path | replace: "/manifests/", ""}}]({{ file.path | absolute_url }}) 
+    * [View in Mirador](https://projectmirador.org/embed/?iiif-content={{ file.path | absolute_url}})
+    * [View in UV](http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest={{ file.path | absolute_url}})
 {% endfor %}
 
-### Documents:
-{% assign files = site.documents  %}
+### Annotations
 
-{% for file in files %}
- * {{ file.path }}
+{% assign annotations = site.static_files | where_exp: "annotation", "annotation.path contains '/annotations/'"  |where_exp: "annotation", "annotation.extname == '.json'"  | where_exp: "annotation", "annotation.path != '/annotations/collection.json'" %}
+
+{% for file in annotations %}
+ * [{{ file.path | replace: "/annotations/", ""}}]({{ file.path | absolute_url }})
+    * [View in Annona](/plugins/annona/?iiif-content={{ file.path | absolute_url }})
 {% endfor %}
 
 
-
-You can use the [editor on GitHub](https://github.com/glenrobson/iiif-training-workbench/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/glenrobson/iiif-training-workbench/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
