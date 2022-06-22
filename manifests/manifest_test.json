@@ -1,0 +1,75 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://iiif-test.github.io/Space/manifests/manifest_test.json",
+  "@type" : "sc:Manifest",
+  "label" : "Glen's space manifest.",
+  "metadata" : [ ],
+  "description" : [ {
+    "@value" : "[Click to edit description]",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/3.0/",
+  "attribution" : "[Click to edit attribution]",
+  "sequences" : [ {
+    "@id" : "http://dc8f34f9-5249-4c6f-9ddb-955f737530a2",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://b59e0cd1-c118-4872-87f6-79dd526c8d6a",
+      "@type" : "sc:Canvas",
+      "label" : "Empty canvas",
+      "height" : 1600,
+      "width" : 1600,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://b705f44d-5bc0-44fa-853f-e8abb012d858",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-blue/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-blue",
+            "profile" : "http://iiif.io/api/image/2/level0.json"
+          },
+          "height" : 1600,
+          "width" : 1600
+        },
+        "on" : "http://b59e0cd1-c118-4872-87f6-79dd526c8d6a"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://716d5f65-4eee-4e4a-a550-51fbc98cf1bb",
+      "@type" : "sc:Canvas",
+      "label" : "Empty canvas",
+      "height" : 1600,
+      "width" : 1600,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://c7b1f884-7864-465e-b3b8-15a2234a0076",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-green/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-green",
+            "profile" : "http://iiif.io/api/image/2/level0.json"
+          },
+          "height" : 1600,
+          "width" : 1600
+        },
+        "on" : "http://716d5f65-4eee-4e4a-a550-51fbc98cf1bb"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ ]
+}
