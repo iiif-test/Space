@@ -13,5 +13,9 @@
     "@type" : "sc:Manifest",
     "@id" : "https://iiif-test.github.io/Space/manifests/ganymede-layers-2021-06-07.json",
     "label" : "Ganymede Image - Layers"
+  }, {
+    "@type" : "sc:Manifest",
+    "@id" : "https://iiif-test.github.io/Space/manifests/manifest_test.json",
+    "label" : "Glen's space manifest."
   } ]
 }
