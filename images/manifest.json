@@ -6,6 +6,63 @@
   "type" : "Manifest",
   "@context" : "http://iiif.io/api/presentation/3/context.json",
   "items" : [ {
+    "width" : 4537,
+    "id" : "https://iiif-test.github.io/Space/images/webb1/canvas/",
+    "label" : {
+      "none" : [ "webb1" ]
+    },
+    "type" : "Canvas",
+    "items" : [ {
+      "id" : "https://iiif-test.github.io/Space/images/webb1/AnnoPage/",
+      "type" : "AnnotationPage",
+      "items" : [ {
+        "motivation" : "Painting",
+        "id" : "https://iiif-test.github.io/Space/images/webb1/annotation/",
+        "type" : "Annotation",
+        "body" : {
+          "service" : [ {
+            "tiles" : [ {
+              "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+              "width" : 1024,
+              "height" : 1024
+            } ],
+            "protocol" : "http://iiif.io/api/image",
+            "sizes" : [ {
+              "width" : 142,
+              "height" : 145
+            }, {
+              "width" : 284,
+              "height" : 290
+            }, {
+              "width" : 568,
+              "height" : 579
+            }, {
+              "width" : 1135,
+              "height" : 1158
+            }, {
+              "width" : 2269,
+              "height" : 2315
+            }, {
+              "width" : 4537,
+              "height" : 4630
+            } ],
+            "profile" : "http://iiif.io/api/image/2/level0.json",
+            "width" : 4537,
+            "@id" : "https://iiif-test.github.io/Space/images/webb1",
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "height" : 4630
+          } ],
+          "format" : "image/jpeg",
+          "width" : 4537,
+          "id" : "https://iiif-test.github.io/Space/images/webb1/full/full/0/default.jpg",
+          "type" : "Image",
+          "height" : 4630
+        },
+        "target" : "https://iiif-test.github.io/Space/images/webb1/canvas/"
+      } ]
+    } ],
+    "height" : 4630
+  }, {
     "width" : 1600,
     "id" : "https://iiif-test.github.io/Space/images/JNCE_2021158_34C00002_V01-red/canvas/",
     "label" : {
