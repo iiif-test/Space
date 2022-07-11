@@ -17,5 +17,9 @@
     "@type" : "sc:Manifest",
     "@id" : "https://iiif-test.github.io/Space/manifests/manifest_test.json",
     "label" : "Glen's space manifest."
+  }, {
+    "@type" : "sc:Manifest",
+    "@id" : "https://iiif-test.github.io/Space/manifests/webb1.json",
+    "label" : "Webb's First Deep Field Unveiled (NIRCam Image)"
   } ]
 }
