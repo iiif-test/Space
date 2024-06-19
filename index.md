@@ -44,3 +44,7 @@
  * [{{ file.path | replace: "/annotations/", ""}}]({{ file.path | absolute_url }})
     * [View in Annona](plugins/annona/?iiif-content={{ file.path | absolute_url }})
 {% endfor %}
+
+### Web pages
+
+ * [Universal viewer](uv.md)
